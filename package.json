@@ -1,0 +1,25 @@
+{
+  "name": "vue-cute-button",
+  "version": "0.0.1",
+  "description": "You can use in front-end frameworks",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirrr1987/vue-cute-button.git"
+  },
+  "types": "./index.d.ts",
+  "keywords": [
+    
+  ],
+  "author": {
+    "email": "maghami.a1987@gmail.com",
+    "name": "Amir Maghami",
+    "url": "http://amirmaghami.ir/"
+  },
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirrr1987/vue-cute-button/issues"
+  },
+  "homepage": "https://github.com/amirrr1987/vue-cute-button#readme"
+}
