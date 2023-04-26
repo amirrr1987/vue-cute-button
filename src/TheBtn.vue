@@ -1,20 +1,20 @@
 <template>
   <div class="btn">
-    <a href="#" v-if="props.btnStyle == '1'" class="anim-01">Hover Me</a>
-    <a href="#" v-if="props.btnStyle == '2'" class="anim-02">Hover Me</a>
-    <a href="#" v-if="props.btnStyle == '3'" class="anim-03">Hover Me</a>
-    <a href="#" v-if="props.btnStyle == '4'" class="anim-04">Hover Me</a>
-    <a href="#" v-if="props.btnStyle == '5'" class="anim-05">Hover Me</a>
-    <a href="#" v-if="props.btnStyle == '6'" class="anim-06"><span>Hover Me</span></a>
-    <a href="#" v-if="props.btnStyle == '7'" class="anim-07"><span>Hover Me</span></a>
-    <a href="#" v-if="props.btnStyle == '8'" class="anim-08">Hover Me</a>
-    <a href="#" v-if="props.btnStyle == '9'" class="anim-09">Hover Me</a>
+    <a href="#" v-if="props.btnStyle == '1'" :class="`anim-${props.btnStyle}`">Hover Me</a>
+    <!-- <a href="#" v-if="props.btnStyle == '2'" class="anim-2">Hover Me</a>
+    <a href="#" v-if="props.btnStyle == '3'" class="anim-3">Hover Me</a>
+    <a href="#" v-if="props.btnStyle == '4'" class="anim-4">Hover Me</a>
+    <a href="#" v-if="props.btnStyle == '5'" class="anim-5">Hover Me</a>
+    <a href="#" v-if="props.btnStyle == '6'" class="anim-6"><span>Hover Me</span></a>
+    <a href="#" v-if="props.btnStyle == '7'" class="anim-7"><span>Hover Me</span></a>
+    <a href="#" v-if="props.btnStyle == '8'" class="anim-8">Hover Me</a>
+    <a href="#" v-if="props.btnStyle == '9'" class="anim-9">Hover Me</a>
     <a href="#" v-if="props.btnStyle == '10'" class="anim-10"><span>H</span>over Me</a>
     <a href="#" v-if="props.btnStyle == '11'" class="anim-11">Hover Me <span></span></a>
     <a href="#" v-if="props.btnStyle == '12'" class="anim-12">Hover Me <span></span></a>
     <a href="#" v-if="props.btnStyle == '13'" class="anim-13">Hover Me</a>
     <a href="#" v-if="props.btnStyle == '14'" class="anim-14">Hover Me</a>
-    <a href="#" v-if="props.btnStyle == '15'" class="anim-15">Hover Me</a>
+    <a href="#" v-if="props.btnStyle == '15'" class="anim-15">Hover Me</a> -->
   </div>
 </template>
 
@@ -23,12 +23,13 @@ interface Props {
   btnStyle: string
 }
 const props = withDefaults(defineProps<Props>(), {
-  btnStyle: ''
+  btnStyle: '1'
 })
+
 </script>
 
 <style>
-.anim-01 {
+.anim-1 {
   width: 12rem;
   aspect-ratio: 3/1;
   border: 3px solid #9a1aaa;
@@ -42,16 +43,16 @@ const props = withDefaults(defineProps<Props>(), {
   font-size: 1.4rem;
   font-family: sans-serif;
 }
-.anim-01:hover {
+.anim-1:hover {
   color: white;
 }
-.anim-01:hover:before {
+.anim-1:hover:before {
   transform: rotate(0deg);
 }
-.anim-01:hover:after {
+.anim-1:hover:after {
   transform: rotate(0deg);
 }
-.anim-01:before {
+.anim-1:before {
   content: '';
   background-color: #9a1aaa;
   width: 100%;
@@ -65,7 +66,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition-duration: 1s;
   z-index: -1;
 }
-.anim-01:after {
+.anim-1:after {
   content: '';
   background-color: #9a1aaa;
   width: 100%;
@@ -80,7 +81,7 @@ const props = withDefaults(defineProps<Props>(), {
   z-index: -1;
 }
 
-.anim-02 {
+.anim-2 {
   width: 12rem;
   aspect-ratio: 3/1;
   border: 3px solid #9a1aaa;
@@ -94,13 +95,13 @@ const props = withDefaults(defineProps<Props>(), {
   font-size: 1.4rem;
   font-family: sans-serif;
 }
-.anim-02:hover {
+.anim-2:hover {
   color: white;
 }
-.anim-02:hover:before {
+.anim-2:hover:before {
   transform: translatex(0px);
 }
-.anim-02:before {
+.anim-2:before {
   content: '';
   width: 100%;
   height: 100%;
@@ -113,7 +114,7 @@ const props = withDefaults(defineProps<Props>(), {
   z-index: -1;
 }
 
-.anim-03 {
+.anim-3 {
   width: 12rem;
   aspect-ratio: 3/1;
   border: 3px solid #9a1aaa;
@@ -127,16 +128,16 @@ const props = withDefaults(defineProps<Props>(), {
   font-size: 1.4rem;
   font-family: sans-serif;
 }
-.anim-03:hover {
+.anim-3:hover {
   color: white;
 }
-.anim-03:hover:after {
+.anim-3:hover:after {
   transform: rotateY(0deg);
 }
-.anim-03:hover:before {
+.anim-3:hover:before {
   transform: rotateX(0deg);
 }
-.anim-03:before {
+.anim-3:before {
   content: '';
   width: 100%;
   height: 100%;
@@ -148,7 +149,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition: transform 0.9s;
   z-index: -1;
 }
-.anim-03:after {
+.anim-3:after {
   content: '';
   width: 100%;
   height: 100%;
@@ -162,7 +163,7 @@ const props = withDefaults(defineProps<Props>(), {
   z-index: -1;
 }
 
-.anim-04 {
+.anim-4 {
   width: 12rem;
   aspect-ratio: 3/1;
   border: 3px solid #9a1aaa;
@@ -176,13 +177,13 @@ const props = withDefaults(defineProps<Props>(), {
   font-size: 1.4rem;
   font-family: sans-serif;
 }
-.anim-04:hover {
+.anim-4:hover {
   color: white;
 }
-.anim-04:hover:before {
+.anim-4:hover:before {
   transform: translatey(0%);
 }
-.anim-04:before {
+.anim-4:before {
   content: 'Want to Send?';
   position: absolute;
   margin: auto;
@@ -198,7 +199,7 @@ const props = withDefaults(defineProps<Props>(), {
   justify-content: center;
 }
 
-.anim-05 {
+.anim-5 {
   letter-spacing: 6px;
   font-size: 1rem;
   font-weight: bold;
@@ -216,20 +217,20 @@ const props = withDefaults(defineProps<Props>(), {
   font-size: 1.2rem;
   font-family: sans-serif;
 }
-.anim-05:hover {
+.anim-5:hover {
   color: black;
 }
-.anim-05:hover:after {
+.anim-5:hover:after {
   left: 0px;
   top: 10px;
   transform: perspective(1000px) rotateX(-75deg);
 }
-.anim-05:hover:before {
+.anim-5:hover:before {
   left: 0px;
   top: -10px;
   transform: perspective(1000px) rotateX(75deg);
 }
-.anim-05:before {
+.anim-5:before {
   content: '';
   width: 100%;
   height: 100%;
@@ -242,7 +243,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition: all 0.2s;
   transform-origin: top;
 }
-.anim-05:after {
+.anim-5:after {
   content: '';
   width: 100%;
   height: 100%;
@@ -256,7 +257,7 @@ const props = withDefaults(defineProps<Props>(), {
   transform-origin: bottom;
 }
 
-.anim-06 {
+.anim-6 {
   letter-spacing: 6px;
   font-size: 1.4rem;
   font-weight: bold;
@@ -272,16 +273,16 @@ const props = withDefaults(defineProps<Props>(), {
   font-family: sans-serif;
   transition: all 0.4s;
 }
-.anim-06:hover {
+.anim-6:hover {
   color: #fff;
 }
-.anim-06:hover:before {
+.anim-6:hover:before {
   left: 0;
 }
-.anim-06:hover:after {
+.anim-6:hover:after {
   top: 0;
 }
-.anim-06:before {
+.anim-6:before {
   content: '';
   position: absolute;
   width: 25%;
@@ -292,7 +293,7 @@ const props = withDefaults(defineProps<Props>(), {
   top: 0;
   left: -25%;
 }
-.anim-06:after {
+.anim-6:after {
   content: '';
   position: absolute;
   width: 25%;
@@ -303,20 +304,20 @@ const props = withDefaults(defineProps<Props>(), {
   top: -100%;
   left: 25%;
 }
-.anim-06 span {
+.anim-6 span {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.anim-06 span:hover:before {
+.anim-6 span:hover:before {
   right: 0;
 }
-.anim-06 span:hover:after {
+.anim-6 span:hover:after {
   bottom: 0;
 }
-.anim-06 span:before {
+.anim-6 span:before {
   content: '';
   position: absolute;
   width: 25%;
@@ -327,7 +328,7 @@ const props = withDefaults(defineProps<Props>(), {
   top: 0;
   right: -25%;
 }
-.anim-06 span:after {
+.anim-6 span:after {
   content: '';
   position: absolute;
   width: 25%;
@@ -339,7 +340,7 @@ const props = withDefaults(defineProps<Props>(), {
   right: 25%;
 }
 
-.anim-07 {
+.anim-7 {
   letter-spacing: 6px;
   font-size: 1.4rem;
   font-weight: bold;
@@ -355,16 +356,16 @@ const props = withDefaults(defineProps<Props>(), {
   font-family: sans-serif;
   transition: all 0.1s;
 }
-.anim-07:hover {
+.anim-7:hover {
   color: #fff;
 }
-.anim-07:hover:before {
+.anim-7:hover:before {
   top: 0;
 }
-.anim-07:hover:after {
+.anim-7:hover:after {
   top: 0;
 }
-.anim-07:before {
+.anim-7:before {
   content: '';
   position: absolute;
   width: 25%;
@@ -376,7 +377,7 @@ const props = withDefaults(defineProps<Props>(), {
   left: 0%;
   transition-delay: 0.2s;
 }
-.anim-07:after {
+.anim-7:after {
   content: '';
   position: absolute;
   width: 25%;
@@ -388,20 +389,20 @@ const props = withDefaults(defineProps<Props>(), {
   left: 25%;
   transition-delay: 0.4s;
 }
-.anim-07 span {
+.anim-7 span {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.anim-07 span:hover:before {
+.anim-7 span:hover:before {
   top: 0;
 }
-.anim-07 span:hover:after {
+.anim-7 span:hover:after {
   bottom: 0;
 }
-.anim-07 span:before {
+.anim-7 span:before {
   content: '';
   position: absolute;
   width: 25%;
@@ -413,7 +414,7 @@ const props = withDefaults(defineProps<Props>(), {
   right: 0%;
   transition-delay: 0.8s;
 }
-.anim-07 span:after {
+.anim-7 span:after {
   content: '';
   position: absolute;
   width: 25%;
@@ -426,7 +427,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition-delay: 0.6s;
 }
 
-.anim-08 {
+.anim-8 {
   text-decoration: none;
   text-transform: uppercase;
   color: #9a1aaa;
@@ -442,7 +443,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition: all 0.1s;
   transition-duration: 1s;
 }
-.anim-08:before {
+.anim-8:before {
   content: '';
   border-top: 2px solid #9a1aaa;
   border-bottom: 2px solid green;
@@ -456,7 +457,7 @@ const props = withDefaults(defineProps<Props>(), {
   margin-bottom: auto;
   transition: all 0.4s;
 }
-.anim-08:after {
+.anim-8:after {
   content: '';
   border-left: 2px solid #9a1aaa;
   border-right: 2px solid #4a0c52;
@@ -470,18 +471,18 @@ const props = withDefaults(defineProps<Props>(), {
   margin-bottom: auto;
   transition: all 0.4s 0.2s;
 }
-.anim-08:hover {
+.anim-8:hover {
   color: green;
   font-weight: bold;
 }
-.anim-08:hover:before {
+.anim-8:hover:before {
   transform: rotateX(180deg);
 }
-.anim-08:hover:after {
+.anim-8:hover:after {
   transform: rotateY(180deg);
 }
 
-.anim-09 {
+.anim-9 {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -496,7 +497,7 @@ const props = withDefaults(defineProps<Props>(), {
   align-items: center;
   position: relative;
 }
-.anim-09:before {
+.anim-9:before {
   content: '';
   border-left: 2px solid #9a1aaa;
   border-top: 2px solid #9a1aaa;
@@ -507,7 +508,7 @@ const props = withDefaults(defineProps<Props>(), {
   top: -4px;
   transition: all 0.4s;
 }
-.anim-09:after {
+.anim-9:after {
   content: '';
   border-right: 2px solid #9a1aaa;
   border-bottom: 2px solid #9a1aaa;
@@ -518,11 +519,11 @@ const props = withDefaults(defineProps<Props>(), {
   bottom: -4px;
   transition: all 0.4s;
 }
-.anim-09:hover:before {
+.anim-9:hover:before {
   width: 90%;
   height: 90%;
 }
-.anim-09:hover:after {
+.anim-9:hover:after {
   width: 90%;
   height: 90%;
 }
