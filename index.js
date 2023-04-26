@@ -1,3 +1,3 @@
-import CuteButton from './src/VueCuteButton.vue'
+import VueCuteButton from './src/VueCuteButton.vue'
 
-export default CuteButton
+export default VueCuteButton
