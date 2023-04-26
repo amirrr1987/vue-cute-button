@@ -1,6 +1,6 @@
 <template>
   <div class="btn">
-    <a href="#" v-if="props.btnStyle == '1'" :class="`anim-${props.btnStyle}`">Hover Me</a>
+    <a href="#" :class="`anim-${props.btnStyle}`"><slot></slot></a>
     <!-- <a href="#" v-if="props.btnStyle == '2'" class="anim-2">Hover Me</a>
     <a href="#" v-if="props.btnStyle == '3'" class="anim-3">Hover Me</a>
     <a href="#" v-if="props.btnStyle == '4'" class="anim-4">Hover Me</a>
@@ -20,12 +20,11 @@
 
 <script setup lang="ts">
 interface Props {
-  btnStyle: string
+  btnStyle: string;
 }
 const props = withDefaults(defineProps<Props>(), {
-  btnStyle: '1'
-})
-
+  btnStyle: "1",
+});
 </script>
 
 <style>
@@ -53,7 +52,7 @@ const props = withDefaults(defineProps<Props>(), {
   transform: rotate(0deg);
 }
 .anim-1:before {
-  content: '';
+  content: "";
   background-color: #9a1aaa;
   width: 100%;
   height: 100%;
@@ -67,7 +66,7 @@ const props = withDefaults(defineProps<Props>(), {
   z-index: -1;
 }
 .anim-1:after {
-  content: '';
+  content: "";
   background-color: #9a1aaa;
   width: 100%;
   height: 100%;
@@ -102,7 +101,7 @@ const props = withDefaults(defineProps<Props>(), {
   transform: translatex(0px);
 }
 .anim-2:before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -138,7 +137,7 @@ const props = withDefaults(defineProps<Props>(), {
   transform: rotateX(0deg);
 }
 .anim-3:before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -150,7 +149,7 @@ const props = withDefaults(defineProps<Props>(), {
   z-index: -1;
 }
 .anim-3:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -184,7 +183,7 @@ const props = withDefaults(defineProps<Props>(), {
   transform: translatey(0%);
 }
 .anim-4:before {
-  content: 'Want to Send?';
+  content: "Want to Send?";
   position: absolute;
   margin: auto;
   left: 0;
@@ -231,7 +230,7 @@ const props = withDefaults(defineProps<Props>(), {
   transform: perspective(1000px) rotateX(75deg);
 }
 .anim-5:before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -244,7 +243,7 @@ const props = withDefaults(defineProps<Props>(), {
   transform-origin: top;
 }
 .anim-5:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -283,7 +282,7 @@ const props = withDefaults(defineProps<Props>(), {
   top: 0;
 }
 .anim-6:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 25%;
   height: 100%;
@@ -294,7 +293,7 @@ const props = withDefaults(defineProps<Props>(), {
   left: -25%;
 }
 .anim-6:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25%;
   height: 100%;
@@ -318,7 +317,7 @@ const props = withDefaults(defineProps<Props>(), {
   bottom: 0;
 }
 .anim-6 span:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 25%;
   height: 100%;
@@ -329,7 +328,7 @@ const props = withDefaults(defineProps<Props>(), {
   right: -25%;
 }
 .anim-6 span:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25%;
   height: 100%;
@@ -366,7 +365,7 @@ const props = withDefaults(defineProps<Props>(), {
   top: 0;
 }
 .anim-7:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 25%;
   height: 100%;
@@ -378,7 +377,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition-delay: 0.2s;
 }
 .anim-7:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25%;
   height: 100%;
@@ -403,7 +402,7 @@ const props = withDefaults(defineProps<Props>(), {
   bottom: 0;
 }
 .anim-7 span:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 25%;
   height: 100%;
@@ -415,7 +414,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition-delay: 0.8s;
 }
 .anim-7 span:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25%;
   height: 100%;
@@ -444,7 +443,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition-duration: 1s;
 }
 .anim-8:before {
-  content: '';
+  content: "";
   border-top: 2px solid #9a1aaa;
   border-bottom: 2px solid green;
   position: absolute;
@@ -458,7 +457,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition: all 0.4s;
 }
 .anim-8:after {
-  content: '';
+  content: "";
   border-left: 2px solid #9a1aaa;
   border-right: 2px solid #4a0c52;
   position: absolute;
@@ -498,7 +497,7 @@ const props = withDefaults(defineProps<Props>(), {
   position: relative;
 }
 .anim-9:before {
-  content: '';
+  content: "";
   border-left: 2px solid #9a1aaa;
   border-top: 2px solid #9a1aaa;
   width: 20px;
@@ -509,7 +508,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition: all 0.4s;
 }
 .anim-9:after {
-  content: '';
+  content: "";
   border-right: 2px solid #9a1aaa;
   border-bottom: 2px solid #9a1aaa;
   width: 20px;
@@ -543,7 +542,7 @@ const props = withDefaults(defineProps<Props>(), {
   position: relative;
 }
 .anim-10:before {
-  content: 'BB';
+  content: "BB";
   position: absolute;
   left: 0;
   top: 0;
@@ -559,7 +558,7 @@ const props = withDefaults(defineProps<Props>(), {
   color: #fff;
 }
 .anim-10:hover:before {
-  content: 'BB';
+  content: "BB";
   background-color: #4a0c52;
 }
 .anim-10:hover span {
@@ -581,7 +580,7 @@ const props = withDefaults(defineProps<Props>(), {
   overflow: hidden;
 }
 .anim-11:before {
-  content: '';
+  content: "";
   border-left: 2px solid #9a1aaa;
   position: absolute;
   left: 0;
@@ -591,7 +590,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition: all 0.2s;
 }
 .anim-11:after {
-  content: '';
+  content: "";
   border-top: 2px solid #9a1aaa;
   position: absolute;
   top: 0;
@@ -601,7 +600,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition: all 0.2s;
 }
 .anim-11 span:before {
-  content: '';
+  content: "";
   border-right: 2px solid #9a1aaa;
   position: absolute;
   right: 0;
@@ -611,7 +610,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition: all 0.2s;
 }
 .anim-11 span:after {
-  content: '';
+  content: "";
   border-bottom: 2px solid #9a1aaa;
   position: absolute;
   left: 0;
@@ -663,7 +662,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition: all 0.4s;
 }
 .anim-12 span:before {
-  content: '';
+  content: "";
   width: 8%;
   height: 500%;
   background-color: white;
@@ -698,7 +697,7 @@ const props = withDefaults(defineProps<Props>(), {
   border: none;
 }
 .anim-13:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50%;
   height: 100%;
@@ -710,7 +709,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .anim-13:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 50%;
   height: 100%;
@@ -751,7 +750,7 @@ const props = withDefaults(defineProps<Props>(), {
   letter-spacing: 6px;
 }
 .anim-14:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -792,7 +791,7 @@ const props = withDefaults(defineProps<Props>(), {
   letter-spacing: 6px;
 }
 .anim-14:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -823,7 +822,7 @@ const props = withDefaults(defineProps<Props>(), {
   letter-spacing: 6px;
 }
 .anim-15:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
@@ -837,7 +836,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition: all 0.7s;
 }
 .anim-15:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;
