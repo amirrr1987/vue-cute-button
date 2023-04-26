@@ -1,6 +1,17 @@
 <template>
   <div class="btn">
-    <a href="#" :class="`anim-${props.btnStyle}`"><slot></slot></a>
+    <a href="#" :class="`anim-${props.btnStyle}`">
+      <span
+        v-if="
+          props.btnStyle == 6 ||
+          props.btnStyle == 7 ||
+          props.btnStyle == 11 ||
+          props.btnStyle == 12
+        "
+        ><slot></slot
+      ></span>
+      <slot></slot>
+    </a>
     <!-- <a href="#" v-if="props.btnStyle == '2'" class="anim-2">Hover Me</a>
     <a href="#" v-if="props.btnStyle == '3'" class="anim-3">Hover Me</a>
     <a href="#" v-if="props.btnStyle == '4'" class="anim-4">Hover Me</a>
