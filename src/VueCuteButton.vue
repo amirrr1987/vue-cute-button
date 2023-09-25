@@ -28,19 +28,21 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 <style>
 .anim-1 {
-  width: 12rem;
-  aspect-ratio: 3/1;
+  min-width: max-content;
+  min-height: max-content;
+  display: inline-flex;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: sans-serif;
   border: 3px solid #9a1aaa;
   text-decoration: none;
-  display: flex;
   justify-content: center;
   align-items: center;
   color: #4a0c52;
   position: relative;
   overflow: hidden;
-  font-size: 1.4rem;
-  font-family: sans-serif;
-  cursor: pointer;
 }
 .anim-1:hover {
   color: white;
@@ -81,18 +83,22 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 .anim-2 {
-  width: 12rem;
-  aspect-ratio: 3/1;
+  min-width: max-content;
+  min-height: max-content;
+  display: inline-flex;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 1rem;
   border: 3px solid #9a1aaa;
   text-decoration: none;
-  display: flex;
   justify-content: center;
   align-items: center;
   color: #4a0c52;
   position: relative;
   overflow: hidden;
-  font-size: 1.4rem;
-  font-family: sans-serif;
 }
 .anim-2:hover {
   color: white;
@@ -114,18 +120,21 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 .anim-3 {
-  width: 12rem;
-  aspect-ratio: 3/1;
+  min-width: max-content;
+  min-height: max-content;
+  display: inline-flex;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: sans-serif;
   border: 3px solid #9a1aaa;
   text-decoration: none;
-  display: flex;
   justify-content: center;
   align-items: center;
   color: #4a0c52;
   position: relative;
   overflow: hidden;
-  font-size: 1.4rem;
-  font-family: sans-serif;
 }
 .anim-3:hover {
   color: white;
@@ -163,18 +172,21 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 .anim-4 {
-  width: 12rem;
-  aspect-ratio: 3/1;
+  min-width: max-content;
+  min-height: max-content;
+  display: inline-flex;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: sans-serif;
   border: 3px solid #9a1aaa;
   text-decoration: none;
-  display: flex;
   justify-content: center;
   align-items: center;
   color: #4a0c52;
   position: relative;
   overflow: hidden;
-  font-size: 1.4rem;
-  font-family: sans-serif;
 }
 .anim-4:hover {
   color: white;
@@ -184,6 +196,7 @@ const props = withDefaults(defineProps<Props>(), {
 }
 .anim-4:before {
   content: "Want to Send?";
+  font-size: xx-small;
   position: absolute;
   margin: auto;
   left: 0;
@@ -199,22 +212,22 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 .anim-5 {
-  letter-spacing: 6px;
+  min-width: max-content;
+  min-height: max-content;
+  display: inline-flex;
+  padding-inline: 1em;
+  padding-block: 0.5em;
   font-size: 1rem;
-  font-weight: bold;
+  cursor: pointer;
+  font-family: sans-serif;
+  letter-spacing: 6px;
   transition: all 0.4s;
   color: #fff;
   text-decoration: none;
   background-color: transparent;
-  text-transform: uppercase;
-  width: 12rem;
-  aspect-ratio: 3/1;
-  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  font-size: 1.2rem;
-  font-family: sans-serif;
 }
 .anim-5:hover {
   color: black;
@@ -257,15 +270,19 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 .anim-6 {
+  min-width: max-content;
+  min-height: max-content;
+  display: inline-flex;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: sans-serif;
   text-decoration: none;
-  text-transform: uppercase;
+
   color: #9a1aaa;
   letter-spacing: 6px;
-  font-size: 1.2rem;
-  font-family: sans-serif;
-  width: 12rem;
-  aspect-ratio: 3/1;
-  display: flex;
+
   justify-content: center;
   align-items: center;
   position: relative;
@@ -301,8 +318,7 @@ const props = withDefaults(defineProps<Props>(), {
   transition: all 0.4s 0.2s;
 }
 .anim-6:hover {
-  color: green;
-  font-weight: bold;
+  color: #4a0c52;
 }
 .anim-6:hover:before {
   transform: rotateX(180deg);
@@ -312,16 +328,19 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 .anim-7 {
+  min-width: max-content;
+  min-height: max-content;
+  display: inline-flex;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: sans-serif;
+
   text-decoration: none;
-  text-transform: uppercase;
   color: #fff;
   background-color: #9a1aaa;
   letter-spacing: 6px;
-  font-size: 1.2rem;
-  font-family: sans-serif;
-  width: 12rem;
-  aspect-ratio: 3/1;
-  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -358,14 +377,19 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 .anim-8 {
+  min-width: max-content;
+  min-height: max-content;
+  display: inline-flex;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: sans-serif;
+
   text-decoration: none;
   color: white;
   letter-spacing: 6px;
   font-size: 1.2rem;
-  font-family: sans-serif;
-  width: 12rem;
-  aspect-ratio: 3/1;
-  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -410,14 +434,26 @@ const props = withDefaults(defineProps<Props>(), {
 }
 
 .anim-9 {
+  min-width: max-content;
+  min-height: max-content;
+  display: inline-flex;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: sans-serif;
   text-decoration: none;
   color: white;
   background-color: #c221d6;
-  font-size: 1.2rem;
-  font-family: sans-serif;
-  width: 12rem;
-  aspect-ratio: 3/1;
-  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.2s;
+  border-radius: 2rem;
+  letter-spacing: 6px;
+  text-decoration: none;
+  color: white;
+  background-color: #c221d6;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -445,50 +481,26 @@ const props = withDefaults(defineProps<Props>(), {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.anim-14:active {
+.anim-9:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
 }
 
-.anim-9 {
-  text-decoration: none;
-  color: white;
-  background-color: #c221d6;
-  font-size: 1.2rem;
-  font-family: sans-serif;
-  width: 12rem;
-  aspect-ratio: 3/1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  transition: all 0.2s;
-  border-radius: 2rem;
-  letter-spacing: 6px;
-}
-.anim-9:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #c221d6;
-  transition: all 0.2s;
-  border-radius: inherit;
-  z-index: -1;
-}
-
 .anim-10 {
+  min-width: max-content;
+  min-height: max-content;
+  display: inline-flex;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: sans-serif;
+
   text-decoration: none;
   color: black;
   background-color: transparent;
   border: 2px solid #9a1aaa;
-  font-size: 1.2rem;
-  font-family: sans-serif;
-  width: 12rem;
-  aspect-ratio: 3/1;
-  display: flex;
+
   justify-content: center;
   align-items: center;
   position: relative;
@@ -496,6 +508,9 @@ const props = withDefaults(defineProps<Props>(), {
   transition: all 0.7s;
   border-radius: 2rem;
   letter-spacing: 6px;
+}
+.anim-10:hover {
+  color: white;
 }
 .anim-10:before {
   content: "";
@@ -505,8 +520,8 @@ const props = withDefaults(defineProps<Props>(), {
   top: 0;
   bottom: 0;
   z-index: -1;
-  border-top: 2rem solid green;
-  border-bottom: 2rem solid green;
+  border-top: 2rem solid #9210a3;
+  border-bottom: 2rem solid #9210a3;
   border-right: 2rem solid transparent;
   transform: translateX(-100%);
   transition: all 0.7s;
@@ -519,8 +534,8 @@ const props = withDefaults(defineProps<Props>(), {
   top: 0;
   bottom: 0;
   z-index: -1;
-  border-top: 2rem solid green;
-  border-bottom: 2rem solid green;
+  border-top: 2rem solid #9210a3;
+  border-bottom: 2rem solid #9210a3;
   border-left: 2rem solid transparent;
   transform: translateX(100%);
   transition: all 0.7s;

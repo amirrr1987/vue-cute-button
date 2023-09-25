@@ -1,6 +1,6 @@
 {
   "name": "vue-cute-button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "You can use in front-end frameworks",
   "main": "index.js",
   "repository": {
@@ -9,7 +9,21 @@
   },
   "types": "./index.d.ts",
   "keywords": [
-    
+    "vue",
+    "vue.js",
+    "button",
+    "buttons",
+    "animated buttons",
+    "button component",
+    "UI component",
+    "button styles",
+    "button animations",
+    "cute buttons",
+    "customizable buttons",
+    "interactive buttons",
+    "Vue.js buttons",
+    "frontend",
+    "web development"
   ],
   "author": {
     "email": "maghami.a1987@gmail.com",
